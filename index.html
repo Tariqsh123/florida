@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Dropdown Navbar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><img src="https://www.greenhomesolutions.com/wp-content/uploads/sites/80/2023/04/GHS-Logo-c.png" alt="Logo"></div>
+
+  <!-- Desktop Menu -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+      <div class="dropdown-content">
+        <!-- Each city -->
+        <div class="submenu-toggle">
+          <span>Miami <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="submenu-toggle">
+          <span>Orlando <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="submenu-toggle">
+          <span>Tampa <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="submenu-toggle">
+          <span>Key West <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="submenu-toggle">
+          <span>Sarasota <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#" id="get-started-btn">Get Started</a></li>
+  </ul>
+
+  <div class="hamburger">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="menubar" id="mobileMenu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#" class="mobile-services-toggle">Services <i class="fa-solid fa-chevron-right"></i></a>
+      <div class="mobile-dropdown">
+        <div class="mobile-submenu-toggle">
+          <span>Miami <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="mobile-submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="mobile-submenu-toggle">
+          <span>Orlando <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="mobile-submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="mobile-submenu-toggle">
+          <span>Tampa <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="mobile-submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="mobile-submenu-toggle">
+          <span>Key West <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="mobile-submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+        <div class="mobile-submenu-toggle">
+          <span>Sarasota <i class="fa-solid fa-chevron-right"></i></span>
+          <div class="mobile-submenu">
+            <a href="#">Mold Remediation Florida</a>
+            <a href="#">Mold Assessment Florida</a>
+            <a href="#">Mold Inspection</a>
+            <a href="#">Mold Testing</a>
+            <a href="#">Mold Removal</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#" id="get-started-btn">Get Started</a></li>
+  </ul>
+</div>
+
+<script>
+const hamburger=document.querySelector(".hamburger");
+const menubar=document.getElementById("mobileMenu");
+hamburger.addEventListener("click",()=>{menubar.classList.toggle("active");hamburger.classList.toggle("hamburger-active");});
+document.querySelectorAll(".dropdown").forEach(drop=>{
+  const main=drop.querySelector("a");
+  const content=drop.querySelector(".dropdown-content");
+  main.addEventListener("click",e=>{
+    e.preventDefault();
+    const isActive=drop.classList.contains("active");
+    document.querySelectorAll(".dropdown").forEach(d=>{
+      d.classList.remove("active");
+      d.querySelector(".dropdown-content").style.display="none";
+      d.querySelectorAll(".submenu-toggle").forEach(st=>{st.classList.remove("active"); st.querySelector(".submenu").style.display="none";});
+    });
+    if(!isActive){ drop.classList.add("active"); content.style.display="flex"; }
+  });
+  drop.querySelectorAll(".submenu-toggle").forEach(sub=>{
+    sub.addEventListener("click",e=>{
+      e.stopPropagation();
+      const sm=sub.querySelector(".submenu");
+      const isActive=sub.classList.contains("active");
+      drop.querySelectorAll(".submenu-toggle").forEach(s=>{ s.classList.remove("active"); s.querySelector(".submenu").style.display="none"; });
+      if(!isActive){ sub.classList.add("active"); sm.style.display="flex"; }
+    });
+  });
+});
+const mobileToggle=document.querySelector(".mobile-services-toggle");
+mobileToggle.addEventListener("click",e=>{
+  e.preventDefault();
+  const dd=mobileToggle.nextElementSibling;
+  const isActive=mobileToggle.classList.contains("active");
+  document.querySelectorAll(".mobile-dropdown").forEach(d=>d.style.display="none");
+  document.querySelectorAll(".mobile-services-toggle").forEach(m=>m.classList.remove("active"));
+  if(!isActive){ dd.style.display="flex"; mobileToggle.classList.add("active"); }
+});
+document.querySelectorAll(".mobile-submenu-toggle").forEach(sub=>{
+  sub.addEventListener("click",e=>{
+    e.stopPropagation();
+    const sm=sub.querySelector(".mobile-submenu");
+    const isActive=sub.classList.contains("active");
+    document.querySelectorAll(".mobile-submenu").forEach(s=>s.style.display="none");
+    document.querySelectorAll(".mobile-submenu-toggle").forEach(s=>s.classList.remove("active"));
+    if(!isActive){ sm.style.display="flex"; sub.classList.add("active"); }
+  });
+});
+document.addEventListener("click",e=>{
+  if(!document.querySelector("nav").contains(e.target) && !menubar.contains(e.target)){
+    document.querySelectorAll(".dropdown").forEach(d=>{
+      d.classList.remove("active");
+      d.querySelector(".dropdown-content").style.display="none";
+      d.querySelectorAll(".submenu-toggle").forEach(st=>{st.classList.remove("active"); st.querySelector(".submenu").style.display="none";});
+    });
+    menubar.classList.remove("active"); hamburger.classList.remove("hamburger-active");
+    document.querySelectorAll(".mobile-dropdown").forEach(d=>d.style.display="none");
+    document.querySelectorAll(".mobile-services-toggle").forEach(m=>m.classList.remove("active"));
+    document.querySelectorAll(".mobile-submenu-toggle").forEach(s=>{s.classList.remove("active"); s.querySelector(".mobile-submenu").style.display="none";});
+  }
+});
+</script>
+<!-- Navbar End -->
+
+
+<!-- Header -->
+ <section class="hero">
+  <!-- Left content -->
+  <div class="hero-left">
+    <h4>Water Damage and Mold Remediation Technicians</h4>
+    <h1>Connecticut Mold, Mold Removal in Stamford, CT</h1>
+    <p>
+      Have you experienced coughing, sneezing, headaches, or musty odors? These can be signs of mold presence in your home. At Connecticut Mold, your health is our #1 Priority, and we will guide you through the solution to your mold problem.
+      <br><br>
+      The plan to solve your mold problem follows:
+      <br>– Visual Inspection
+      <br>– Moisture detection + Mold Testing (If required)
+      <br>– Remediation Plan
+      <br><br>
+      The consequences of unchecked mold growth can be severe, ranging from poor indoor air quality, allergic reactions, and respiratory problems to poisoning, and more. After remediation, you will breathe clean air without mold-related health worries and will transform your home into a haven of well-being.
+    </p>
+    <p class="bold">
+      CALL TODAY! Take a step toward a mold-free future. Let’s say goodbye to mold and hello to a healthy home. Mold out!
+    </p>
+    <button id="get-started-btn">Get Started</button>
+  </div>
+
+  <!-- Right form -->
+  <div class="hero-right">
+    <div class="hero-form">
+      <p class="call-now">
+        <img src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=28a745" alt="phone icon">
+        Call Now On (+92 111 111 111)
+      </p>
+      <h2>Free Consultation</h2>
+      <form>
+        <label for="fullname">Full name *</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="phone">Phone *</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">Select Service</label>
+        <select id="service" name="service">
+          <option>Residential</option>
+          <option>Commercial</option>
+          <option>Mold Services</option>
+          <option>Dehumidification</option>
+          <option>Waterproofing Services</option>
+          <option>Other</option>
+        </select>
+
+        <button type="submit" id="get-started-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us  -->
+ <section class="why-choose-us">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header">
+      <h2>Excellence You Can Rely On</h2>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/verified-account.png" alt="Certified Experts">
+        </div>
+        <h3>Certified Experts</h3>
+        <p>Professional certified team with years of experience in mold remediation and water damage restoration.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/clock.png" alt="Fast Response">
+        </div>
+        <h3>Fast Response</h3>
+        <p>Emergency services within 24 hours. We act quickly to minimize damage and protect your home.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/leaf.png" alt="Eco-Friendly">
+        </div>
+        <h3>Eco-Friendly</h3>
+        <p>Safe products for family and pets, using environmentally responsible mold removal methods.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/money-bag.png" alt="Transparent Pricing">
+        </div>
+        <h3>Transparent Pricing</h3>
+        <p>Upfront quotes with no hidden fees. Honest pricing so you know exactly what to expect.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/shield.png" alt="Satisfaction Guaranteed">
+        </div>
+        <h3>Satisfaction Guaranteed</h3>
+        <p>We don’t leave until your home is completely mold-free and you’re fully satisfied.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/home.png" alt="Comprehensive Services">
+        </div>
+        <h3>Comprehensive Services</h3>
+        <p>From inspection to prevention, we provide a complete solution for residential and commercial properties.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Section -->
+ <section class="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Services</h2>
+    </div>
+
+    <div class="service-cards">
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://img.icons8.com/?size=100&id=5U9xRjbJumJP&format=png&color=28a745" alt="Mold Remediation">
+        </div>
+        <h3>Mold Remediation</h3>
+        <p>Comprehensive mold removal and prevention solutions to keep your home safe and healthy.</p>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/microscope.png" alt="Mold Assessment">
+        </div>
+        <h3>Mold Assessment</h3>
+        <p>Professional assessment to identify mold presence and potential areas of concern quickly.</p>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/inspection.png" alt="Mold Inspection">
+        </div>
+        <h3>Mold Inspection</h3>
+        <p>Detailed inspections using advanced tools to detect mold hidden in walls, ceilings, and vents.</p>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://img.icons8.com/ios-filled/50/28a745/test-tube.png" alt="Mold Testing">
+        </div>
+        <h3>Mold Testing</h3>
+        <p>Reliable mold testing to identify types and levels of mold for safe and effective remediation.</p>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-img">
+          <img src="https://img.icons8.com/?size=100&id=25895&format=png&color=28a745" alt="Mold Removal">
+        </div>
+        <h3>Mold Removal</h3>
+        <p>Expert mold removal services to eliminate mold completely and prevent future growth.</p>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+ <section class="process-section">
+  <div class="container">
+    <div class="process-wrapper">
+
+      <!-- Left Image -->
+      <div class="process-image">
+        <img src="https://moldremediationmiamielite.com/wp-content/uploads/2024/11/Process.jpg" alt="Mold Remediation Process">
+      </div>
+
+      <!-- Right Process Steps -->
+      <div class="process-steps">
+        <h2>Our Proven Process</h2>
+
+        <div class="step step-1">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Visual Inspection</h3>
+            <p>Thorough property examination to detect visible mold and moisture issues.</p>
+          </div>
+        </div>
+
+        <div class="step step-2">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Moisture Detection & Mold Testing</h3>
+            <p>Accurate testing using advanced tools to identify mold type and affected areas.</p>
+          </div>
+        </div>
+
+        <div class="step step-3">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Remediation Plan</h3>
+            <p>Custom plan created to safely remove mold and prevent future growth.</p>
+          </div>
+        </div>
+
+        <div class="step step-4">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Execution & Monitoring</h3>
+            <p>Certified team executes remediation while monitoring for complete mold removal.</p>
+          </div>
+        </div>
+
+        <div class="step step-5">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Final Inspection</h3>
+            <p>Ensures your home is safe, clean, and free from mold-related risks.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cities Section -->
+ <section class="cities-section">
+  <div class="container">
+
+    <!-- Main Heading -->
+    <div class="section-header">
+      <h2>Our Service Areas</h2>
+      <div class="main-heading-line"></div>
+      <p>Providing expert mold remediation services across multiple cities to ensure your home is safe, healthy, and mold-free. Our team is committed to professional and effective solutions tailored for each area we serve.</p>
+    </div>
+
+    <!-- Florida -->
+    <div class="city">
+      <div class="city-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnjW87_ik4appsgLdmZvVw_Oz5K3buhwIMIg&s" alt="Florida">
+      </div>
+      <div class="city-content">
+        <h3>Florida</h3>
+        <p>Expert mold remediation services across Florida to keep your home safe and healthy. We offer detailed inspections, testing, and removal services for a mold-free environment.</p>
+        <ul class="services-list">
+          <li>Mold Remediation</li>
+          <li>Mold Assessment</li>
+          <li>Mold Inspection</li>
+          <li>Mold Testing</li>
+          <li>Mold Removal</li>
+        </ul>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Miami -->
+    <div class="city reverse">
+      <div class="city-image">
+        <img src="https://gopro-spect.com/wp-content/uploads/2025/02/what-is-the-difference-between-mold-inspection-and-mold-remediation-1024x683.webp" alt="Miami">
+      </div>
+      <div class="city-content">
+        <h3>Miami</h3>
+        <p>Professional mold services in Miami ensuring a healthy environment for your family. Our experts use advanced methods to identify and remove mold efficiently.</p>
+        <ul class="services-list">
+          <li>Mold Remediation</li>
+          <li>Mold Assessment</li>
+          <li>Mold Inspection</li>
+          <li>Mold Testing</li>
+          <li>Mold Removal</li>
+        </ul>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Orlando -->
+    <div class="city">
+      <div class="city-image">
+        <img src="https://transform.octanecdn.com/crop/1920x1080/https://octanecdn.com/lunsprogeorgiacom/lunsprogeorgiacom_459021174.jpeg" alt="Orlando">
+      </div>
+      <div class="city-content">
+        <h3>Orlando</h3>
+        <p>Trusted mold remediation solutions in Orlando to protect your home and loved ones. Our team ensures a thorough assessment and complete removal of mold.</p>
+        <ul class="services-list">
+          <li>Mold Remediation</li>
+          <li>Mold Assessment</li>
+          <li>Mold Inspection</li>
+          <li>Mold Testing</li>
+          <li>Mold Removal</li>
+        </ul>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Tampa -->
+    <div class="city reverse">
+      <div class="city-image">
+        <img src="https://www.moldguy.ca/wp-content/uploads/2022/12/Can-I-Use-Home-Mold-Testing-Kits-Instead-of-Mold-Inspection.jpg" alt="Tampa">
+      </div>
+      <div class="city-content">
+        <h3>Tampa</h3>
+        <p>Comprehensive mold services in Tampa providing safe and effective solutions. We prioritize safety and ensure your property is free from mold hazards.</p>
+        <ul class="services-list">
+          <li>Mold Remediation</li>
+          <li>Mold Assessment</li>
+          <li>Mold Inspection</li>
+          <li>Mold Testing</li>
+          <li>Mold Removal</li>
+        </ul>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Key West -->
+    <div class="city">
+      <div class="city-image">
+        <img src="https://dratech.org/wp-content/uploads/2025/03/2200.jpeg" alt="Key West">
+      </div>
+      <div class="city-content">
+        <h3>Key West</h3>
+        <p>Reliable mold remediation services in Key West keeping your indoor air clean. Our team uses professional equipment to identify and remove mold effectively.</p>
+        <ul class="services-list">
+          <li>Mold Remediation</li>
+          <li>Mold Assessment</li>
+          <li>Mold Inspection</li>
+          <li>Mold Testing</li>
+          <li>Mold Removal</li>
+        </ul>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Sarasota -->
+    <div class="city reverse">
+      <div class="city-image">
+        <img src="https://transform.octanecdn.com/crop/1600x900/https://octanecdn.com/moldmedicscom/moldmedicscom_105676576.PNG" alt="Sarasota">
+      </div>
+      <div class="city-content">
+        <h3>Sarasota</h3>
+        <p>Professional mold remediation in Sarasota ensuring a healthy home environment. We provide complete solutions including assessment, testing, and mold removal.</p>
+        <ul class="services-list">
+          <li>Mold Remediation</li>
+          <li>Mold Assessment</li>
+          <li>Mold Inspection</li>
+          <li>Mold Testing</li>
+          <li>Mold Removal</li>
+        </ul>
+        <button id="get-started-btn">Get Started</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+</body>
+</html>
