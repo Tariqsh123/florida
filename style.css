@@ -712,6 +712,7 @@ nav ul li.active>a .fa-chevron-down {
 .cities-section {
   background: #f9f9f9;
   padding: 50px 20px;
+  padding-top: 0;
   font-family: 'Arial', sans-serif;
   color: #333;
 }
@@ -874,10 +875,11 @@ nav ul li.active>a .fa-chevron-down {
 }
 
 @media(max-width:576px){
-  .cities-section {
-    padding: 50px 20px;
-  }
-
+      .cities-section {
+        padding: 20px;
+        padding-top: 0px;
+        margin-top: -60px;
+    }
   .city-content h3 {
     font-size: 1.7rem;
   }
