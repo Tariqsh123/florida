@@ -1347,6 +1347,7 @@ nav ul li.active>a .fa-chevron-down {
 
   .service-heading {
     font-size: 20px;
+    text-align: center;
   }
 
       .service-paragraph {
@@ -1510,10 +1511,10 @@ nav ul li.active>a .fa-chevron-down {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .equipment-section {
-    margin-top: -50px;
-    margin-bottom: 50px;
-  }
+      .equipment-section {
+        padding: 50px 20px;
+        margin-bottom: 50px;
+    }
 
   .equipment-header h2 {
     font-size: 35px;
