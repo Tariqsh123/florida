@@ -763,6 +763,9 @@ nav ul li.active>a .fa-chevron-down {
   margin-bottom: 20px;
   flex-wrap: wrap;
   transition: transform 0.4s ease;
+  box-shadow: 1px 1px 5px rgb(163, 163, 163);
+  border-radius: 20px;
+  padding: 20px;
 }
 .city.reverse {
   flex-direction: row-reverse;
@@ -882,6 +885,7 @@ nav ul li.active>a .fa-chevron-down {
   background: #111;
   color: #fff;
   padding: 50px 20px;
+  border-bottom: 1px solid white;
   font-family: 'Arial', sans-serif;
 }
 .testimonials .container {
@@ -908,8 +912,11 @@ nav ul li.active>a .fa-chevron-down {
 .testimonial-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  gap: 60px 20px;
 }
 
 .testimonial-card {
@@ -1474,3 +1481,187 @@ nav ul li.active>a .fa-chevron-down {
 }
 
   
+
+
+/* After and Before */
+.before-after-collage {
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.before-after-collage .collage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.before-after-collage .image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 250px;
+  max-width: 400px;
+}
+
+.before-after-collage .image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.before-after-collage .caption {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.before-after-collage .text-box {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
+}
+.before-after-collage .text-box h2 {
+  font-size: 36px;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.before-after-collage .text-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .before-after-collage .collage {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+  .before-after-collage .image-column {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .before-after-collage .image-column .image-box {
+    flex: 1 1 45%;
+  }
+
+  .before-after-collage .text-box {
+    margin: 30px 0;
+  }
+}
+
+
+/* Tips */
+.mold-tips-professional {
+  padding: 50px 20px;
+  background-color: #28a745;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.mold-tips-professional h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.mold-tips-professional p {
+  font-size: 18px;
+  margin-bottom: 60px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 tips per row */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tip h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.tip h3 i {
+  margin-right: 12px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.tip p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0f7ea;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 tips per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .tips-grid {
+    grid-template-columns: 1fr; /* 1 tip per row on small screens */
+    text-align: center;
+  }
+
+  .tip h3 {
+    justify-content: center;
+  }
+}
+
+
+
+.call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #28a745; /* Green background */
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 35px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  z-index: 1000;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.call-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+@media(max-width:600px){
+  .call-button {
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+}
+
+}
