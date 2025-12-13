@@ -1781,35 +1781,61 @@ nav ul li.active>a .fa-chevron-down {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  background-color: #e9e9e9;
 }
 .all-section-cta-inner{
   height: fit-content;
-  width: 95%;
-  background-color: white;
+  width: 100%;
+  background-color: #fdf2f2;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  gap: 3px;
   border-radius: 10px;
 }
 .all-section-cta-inner h6{
   text-align: center;
-  font-size: large;
+  font-size: medium;
 }
 .all-section-cta-inner p{
   text-align: center;
-  font-size: medium;
+  font-size: 12px;
 }
-.all-section-cta-inner a{
-  text-align: center;
-  font-size: medium;
+.all-section-cta-inner a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
   color: white;
-  padding: 5px 20px;
+  padding: 3px 10px;
   border-radius: 20px;
-  background-color: #28a745;
+  background-image: linear-gradient(#28a745, #0f852a);
   text-decoration: none;
+  gap: 5px;
+  position: relative;
+}
+
+/* Add phone icon before text */
+.all-section-cta-inner a::before {
+  content: "\260E"; /* ☎ Unicode phone symbol */
+  display: inline-block;
+  margin-right: 5px;
+  animation: ring 1s infinite;
+  transform-origin: 70% 70%; /* pivot point for realistic ring */
+}
+
+/* Ringing animation */
+@keyframes ring {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(15deg); }
+  20% { transform: rotate(-10deg); }
+  30% { transform: rotate(15deg); }
+  40% { transform: rotate(-10deg); }
+  50% { transform: rotate(15deg); }
+  60% { transform: rotate(-10deg); }
+  70% { transform: rotate(15deg); }
+  80% { transform: rotate(-10deg); }
+  90% { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
 }
