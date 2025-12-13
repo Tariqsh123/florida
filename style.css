@@ -1785,7 +1785,7 @@ nav ul li.active>a .fa-chevron-down {
 .all-section-cta-inner{
   height: fit-content;
   width: 100%;
-  background-color: #fdf2f2;
+  background-color: rgb(255, 243, 243);
   display: flex;
   flex-direction: column;
   justify-content: center;
