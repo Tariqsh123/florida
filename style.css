@@ -614,6 +614,8 @@ nav ul li.active>a .fa-chevron-down {
 }
 .process-image {
   flex: 1 1 45%;
+  justify-self: center;
+  align-self: center;
 }
 .process-image img {
   width: 100%;
