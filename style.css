@@ -206,33 +206,33 @@ nav ul li.active>a .fa-chevron-down {
   flex-direction:column;
   justify-content:center;
   padding: 60px;
+  gap: 5px;
+}
+.hero-left{
+  justify-content: flex-start;
 }
 .hero-left h4 {
   font-size: 18px;
   color:#fff;
   font-weight:600;
-  margin-bottom:15px;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
 .hero-left h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size:3rem;
+  font-size:44px;
   font-weight:900;
   line-height:1.2;
-  margin-bottom:20px;
 }
 .hero-left p {
   font-size:1rem;
   max-width:600px;
-  margin-bottom:20px;
   line-height:1.6;
 }
 .hero-left p.bold {
   font-weight:bold;
   color:#28a745;
-  margin-bottom:30px;
   font-size:1.1rem;
 }
 .hero-left button {
@@ -339,7 +339,7 @@ nav ul li.active>a .fa-chevron-down {
 }
 @media(max-width:576px){
   .hero-left h1 { font-size:1.9rem; }
-  .hero-left p, .hero-left p.bold { font-size:0.95rem; }
+  .hero-left p, .hero-left p.bold { font-size:14px; }
   .hero-form { padding:30px 20px; }
   .hero-form h2 { font-size:24px !important; padding-left: 50px; margin-left: -40px; width: 105%; }
       .hero-form h2::after {
@@ -1790,9 +1790,8 @@ nav ul li.active>a .fa-chevron-down {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   gap: 3px;
-  border-radius: 10px;
 }
 .all-section-cta-inner h6{
   text-align: center;
@@ -1823,6 +1822,18 @@ nav ul li.active>a .fa-chevron-down {
   margin-right: 5px;
   animation: ring 1s infinite;
   transform-origin: 70% 70%; /* pivot point for realistic ring */
+}
+@media(max-width:600px){
+  .all-section-cta-inner h6{
+  font-size: 13px;
+}
+.all-section-cta-inner p{
+  font-size: 11px;
+}
+.all-section-cta-inner a {
+  font-size: 12px;
+  padding: 2px 10px;
+}
 }
 
 /* Ringing animation */
