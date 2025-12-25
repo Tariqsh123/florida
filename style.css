@@ -187,7 +187,7 @@ nav ul li.active>a .fa-chevron-down {
   flex-wrap: wrap;
   height: fit-content;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   align-items: center;
   background: url('https://img.freepik.com/free-photo/unrecognizable-person-white-chemical-protection-suit-doing-disinfection-public-areas-stop-spreading-highly-contagious-corona-virus_342744-869.jpg?semt=ais_hybrid&w=740&q=80') center/cover no-repeat;
   position: relative;
@@ -197,7 +197,8 @@ nav ul li.active>a .fa-chevron-down {
   content: '';
   position: absolute;
   top:0; left:0;
-  width:100%; height:100%;
+  width:100%;
+   height:100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index:1;
 }
@@ -297,6 +298,22 @@ nav ul li.active>a .fa-chevron-down {
   .hero-left h1 { font-size:1.9rem; }
   .hero-left p, .hero-left p.bold { font-size:14px; }
   
+}
+@media(min-width:1500px){
+  .hero-left {
+    padding: 150px 20px;
+    max-width: 1400px;
+    gap: 20px;
+}
+.hero-left h4 {
+    font-size: 25px;}
+    .hero-left h1 {
+      font-size: 55px;
+    }
+    .hero-left p,.hero-left p.bold {
+    font-size: large;
+}
+
 }
 
 /* Why Choose Us */
@@ -1799,3 +1816,98 @@ nav ul li.active>a .fa-chevron-down {
 }
 
 
+
+
+.map-section {
+  width: 100%;
+  padding: 60px 0;
+  background: #f6f8f8;
+}
+
+.map-wrapper {
+  max-width: 1200px;        /* tighter container */
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Column layout everywhere */
+.map-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;               /* controlled spacing */
+}
+
+/* Location Card */
+.location-card {
+  background: #28a745;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 20px 22px;
+}
+
+.location-card h3 {
+  font-size: 35px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 6px;
+}
+
+.company-name {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.address {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.direction-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #004d43;
+  text-decoration: none;
+  border-bottom: 2px solid #004d43;
+}
+
+/* Map Card */
+.map-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.map-container {
+  width: 100%;
+  height: 420px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive heights */
+@media (max-width: 768px) {
+  .map-container {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container {
+    height: 260px;
+  }
+  .location-card h3 {
+    font-size: 25px;
+  }
+}
