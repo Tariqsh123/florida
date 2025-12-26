@@ -166,7 +166,14 @@ nav ul li.active>a .fa-chevron-down {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
+    cursor: pointer;
+    justify-content: center;
+
+    /* infinite scale animation */
+    animation: pulse-scale 1.5s ease-in-out infinite;
+
+    /* smooth GPU animation */
+    will-change: transform;
 }
 
 /* Realistic shine */
@@ -187,9 +194,20 @@ nav ul li.active>a .fa-chevron-down {
     );
     transform: skewX(-20deg);
     animation: realistic-shine 3s ease-in-out infinite;
+    pointer-events: none;
 }
 
-/* Natural timing */
+/* Scale animation keyframes */
+@keyframes pulse-scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08); /* adjust max scale */
+    }
+}
+
+/* Shine animation */
 @keyframes realistic-shine {
     0% {
         left: -60%;
@@ -207,12 +225,7 @@ nav ul li.active>a .fa-chevron-down {
         opacity: 0;
     }
 }
-/* 
-#get-started-btn:hover {
-    background-color: white;
-    color: #28a745;
-    border: 2px solid #28a745;
-} */
+
 
 @media(max-width:900px) {
     nav ul {
@@ -1817,6 +1830,7 @@ nav ul li.active>a .fa-chevron-down {
   background-color: white;
   text-decoration: none;
   font-weight: 600;
+    animation: pulse-scale 1.5s ease-in-out infinite;
   font-size: 20px;
   gap: 5px;
   position: relative;
