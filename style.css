@@ -161,16 +161,59 @@ nav ul li.active>a .fa-chevron-down {
     padding: 7px 20px;
     background-color: #28a745;
     border: 2px solid transparent;
-  font-weight: 600;
+    font-weight: 600;
     color: white;
-    transition: all 0.3s;
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
+
+/* Realistic shine */
+#get-started-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 35%;
+    height: 100%;
+    background: linear-gradient(
+        110deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.15) 30%,
+        rgba(255, 255, 255, 0.45) 50%,
+        rgba(255, 255, 255, 0.15) 70%,
+        transparent 100%
+    );
+    transform: skewX(-20deg);
+    animation: realistic-shine 3s ease-in-out infinite;
+}
+
+/* Natural timing */
+@keyframes realistic-shine {
+    0% {
+        left: -60%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    40% {
+        left: 120%;
+        opacity: 0;
+    }
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+/* 
 #get-started-btn:hover {
     background-color: white;
     color: #28a745;
     border: 2px solid #28a745;
-}
+} */
+
 @media(max-width:900px) {
     nav ul {
         display: none;
