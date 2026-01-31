@@ -775,7 +775,7 @@ nav ul li.active>a .fa-chevron-down {
 .city {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 20px;
   flex-wrap: wrap;
   transition: transform 0.4s ease;
@@ -787,14 +787,16 @@ nav ul li.active>a .fa-chevron-down {
   flex-direction: row-reverse;
 }
 .city-image {
-  flex: 1 1 45%;
+  /* flex: 1 1 45%; */
   display: flex;
+  height: 400px;
+  width: 45%;
   justify-content: center;
   align-items: center;
 }
 .city-image img {
   width: 100%;
-  max-height: 400px;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.1);
@@ -856,9 +858,11 @@ nav ul li.active>a .fa-chevron-down {
     text-align: center;
   }
   .city-image, .city-content {
-    flex: 1 1 100%;
-    text-align: center;
-  }
+        /* flex: 1 1 100%; */
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
   .city-content h3 {
     font-size: 1.9rem;
   }
