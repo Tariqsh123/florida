@@ -747,7 +747,6 @@ nav ul li.active>a .fa-chevron-down {
 .cities-section {
   background: #f9f9f9;
   padding: 50px 20px;
-  padding-top: 0;
   font-family: 'Arial', sans-serif;
   color: #333;
 }
@@ -2014,6 +2013,7 @@ nav ul li.active>a .fa-chevron-down {
   text-align: center;
   max-width: 800px;
 }
+
 @media(max-width:600px){
   .protect-main-container h2{
   font-size: 35px;
