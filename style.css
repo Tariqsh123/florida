@@ -756,7 +756,8 @@ nav ul li.active>a .fa-chevron-down {
 }
 .cities-section .section-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 0;
+  
 }
 .cities-section .section-header h2 {
   font-size: 3rem;
@@ -885,9 +886,9 @@ nav ul li.active>a .fa-chevron-down {
 }
 @media(max-width:576px){
       .cities-section {
-        padding: 20px;
-        padding-top: 0px;
-        margin-top: -60px;
+        padding: 60px 20px;
+        /* padding-top: 0px; */
+        /* margin-top: -60px; */
     }
   .city-content h3 {
     font-size: 1.7rem;
