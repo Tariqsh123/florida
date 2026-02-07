@@ -1367,7 +1367,11 @@ nav ul li.active>a .fa-chevron-down {
   .service-layout {
     flex-direction: column;
   }
-
+  .service-content p{
+    text-align: center;
+    font-size: medium;
+    color: #555;
+  }
   #service-title {
     font-size: 28px;
   }
@@ -1611,7 +1615,7 @@ nav ul li.active>a .fa-chevron-down {
 .before-after-collage .text-box h2::after {
   content: "";
   position: absolute;
-  left: 30px;
+  left: 30%;
   bottom: -10px;
   width: 70px;
   height: 4px;
@@ -1631,7 +1635,8 @@ nav ul li.active>a .fa-chevron-down {
 }
 
 /* green dot before paragraph */
-.before-after-collage .text-box p::before {
+/* sirf 2nd p se onwards dot aaye */
+.before-after-collage .text-box p:not(:first-of-type)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1641,7 +1646,15 @@ nav ul li.active>a .fa-chevron-down {
   background-color: #28a745;
   border-radius: 50%;
 }
+.before-after-collage .text-box p:first-of-type {
+  padding-left: 0;
+}
 
+
+.before-after-collage .text-box p strong{
+  display: block;
+  margin-bottom: -20px;
+}
 
 /* Responsive */
 @media (max-width: 1100px) {
@@ -1667,11 +1680,20 @@ nav ul li.active>a .fa-chevron-down {
   }
 }
 @media(max-width:600px){
+  .before-after-collage .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .before-after-collage .text-box h2 {
     text-align: center;
   }
   .before-after-collage {
   padding-bottom:  20px;
+}
+.before-after-collage .text-box p:first-of-type {
+  text-align: center;
 }
 
 }
@@ -1992,7 +2014,8 @@ nav ul li.active>a .fa-chevron-down {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0px 10px;
+  padding-bottom: 60px;
   gap: 30px;
 }
 .protect-main-container h2{
@@ -2002,12 +2025,12 @@ nav ul li.active>a .fa-chevron-down {
 }
 .protect-main-container h2::after{
   content: '';
-  height: 5px;
+  height: 3px;
   background-color: #00861f;
-  width: 100px;
-  bottom: -10px;
+  width: 80px;
+  bottom: -5px;
   position: absolute;
-  left: 50%;
+  left: 20%;
 }
 .protect-main-container p{
   font-size: medium;
@@ -2021,5 +2044,9 @@ nav ul li.active>a .fa-chevron-down {
 }
 .protect-main-container p{
   font-size: small;
+}
+
+.testimonial-review p{
+  font-size: medium;
 }
 }
