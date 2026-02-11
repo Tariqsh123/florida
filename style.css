@@ -1631,12 +1631,12 @@ nav ul li.active>a .fa-chevron-down {
   line-height: 1.8;
   margin-bottom: 15px;
   position: relative;
-  padding-left: 18px;
+  /* padding-left: 18px; */
 }
 
 /* green dot before paragraph */
 /* sirf 2nd p se onwards dot aaye */
-.before-after-collage .text-box p:not(:first-of-type)::before {
+/* .before-after-collage .text-box p:not(:first-of-type)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1645,7 +1645,7 @@ nav ul li.active>a .fa-chevron-down {
   height: 8px;
   background-color: #28a745;
   border-radius: 50%;
-}
+} */
 .before-after-collage .text-box p:first-of-type {
   padding-left: 0;
 }
