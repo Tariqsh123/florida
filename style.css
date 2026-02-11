@@ -1651,11 +1651,18 @@ nav ul li.active>a .fa-chevron-down {
 }
 
 
-.before-after-collage .text-box p strong{
+.before-after-collage .text-box p strong ,.before-after-collage .text-box p b{
   display: block;
   margin-bottom: -20px;
 }
+.before-after-collage .text-box p strong span,.before-after-collage .text-box p b span{
+  background-color: #0f852a;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 05px;
 
+}
 /* Responsive */
 @media (max-width: 1100px) {
   .before-after-collage .collage {
