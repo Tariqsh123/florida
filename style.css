@@ -103,7 +103,7 @@ nav ul li.active>a .fa-chevron-down {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 85%;
+    width: 95%;
     height: 100vh;
     background: #fff;
     padding: 30px 20px;
@@ -254,7 +254,7 @@ nav ul li.active>a .fa-chevron-down {
   object-fit: contain;
 }
 .mobile-menu-upper-section p{
-  font-size: small;
+  font-size: 12px;
   color: #555;
   text-align: left;
 }
@@ -379,6 +379,9 @@ nav ul li.active>a .fa-chevron-down {
 @media(max-width:576px){
   .hero-left h1 { font-size:1.9rem; }
   .hero-left p, .hero-left p.bold { font-size:14px; }
+  .hero-left button {
+  font-size:medium;
+}
   
 }
 @media(min-width:1500px){
@@ -1878,6 +1881,7 @@ nav ul li.active>a .fa-chevron-down {
 .call-button {
     right: 10px;
     width: 95%;
+    bottom: 10%;
     align-items: center;
     justify-content: center;
 }
