@@ -106,7 +106,7 @@ nav ul li.active>a .fa-chevron-down {
     width: 90%;
     height: 100vh;
     background: #fff;
-    padding: 60px 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     transition: 0.5s;
@@ -254,7 +254,7 @@ nav ul li.active>a .fa-chevron-down {
   object-fit: contain;
 }
 .mobile-menu-upper-section p{
-  font-size: small;
+  font-size: x-small;
   color: #555;
   padding-left: 20px;
   text-align: left;
