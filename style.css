@@ -1656,7 +1656,7 @@ nav ul li.active>a .fa-chevron-down {
 
 .before-after-collage .text-box p strong ,.before-after-collage .text-box p b{
   display: block;
-  margin-bottom: -20px;
+  /* margin-bottom: -20px; */
 }
 .before-after-collage .text-box p strong span,.before-after-collage .text-box p b span{
   background-color: #0f852a;
