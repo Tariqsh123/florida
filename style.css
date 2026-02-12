@@ -1172,8 +1172,11 @@ nav ul li.active>a .fa-chevron-down {
     padding-right: 50px;
   }
    .faq-answer {
-    padding:  10px;
+    padding:  0 10px;
    }
+   .faq-item.open .faq-answer {
+      padding: 10px;
+    }
   .faq .section-header h2 {
     font-size: 35px;
 }
