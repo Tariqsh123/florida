@@ -1306,25 +1306,26 @@ faqItems.forEach(item => {
       }
     });
 
-    if (answer.style.maxHeight) {
+    if (item.classList.contains("open")) {
       answer.style.maxHeight = null;
       item.classList.remove("open");
     } else {
-      answer.style.maxHeight = answer.scrollHeight + 36 + "px";
+      answer.style.maxHeight = answer.scrollHeight + "px"; // fit content exactly
       item.classList.add("open");
     }
   });
 });
 
-/* 🔥 Open first FAQ on page load */
+/* Open first FAQ on page load */
 window.addEventListener("DOMContentLoaded", () => {
   if (faqItems.length > 0) {
     const firstItem = faqItems[0];
     const firstAnswer = firstItem.querySelector(".faq-answer");
-    firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 36 + "px";
+    firstAnswer.style.maxHeight = firstAnswer.scrollHeight + "px"; // fit content
     firstItem.classList.add("open");
   }
 });
+
 </script>
 
 
