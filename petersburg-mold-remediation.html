@@ -159,6 +159,10 @@
 
 <!-- Mobile Menu -->
 <div class="menubar" id="mobileMenu">
+  <div class="mobile-menu-upper-section">
+    <img src="images/logo.webp" alt="logo" title="logo" loading="lazy">
+    <p>Mold Removal Cleaner provides certified mold inspection, removal, and remediation services across Miami, Orlando, Tampa, Jacksonville, and St. Petersburg. Our licensed specialists use advanced moisture detection, strict containment protocols, and eco-safe treatments to eliminate mold at its source. We deliver fast response, detailed reporting, and industry-compliant solutions for healthier residential and commercial indoor environments.</p>
+  </div>
   <ul>
     <li><a href="index.html" title="Home">Home</a></li>
 
@@ -861,40 +865,67 @@ document.addEventListener("click", e => {
 <script>
 const faqItems = document.querySelectorAll(".faq-item");
 
+// Function to open FAQ
+function openFAQ(item) {
+  const answer = item.querySelector(".faq-answer");
+  item.classList.add("open");
+
+  // Set height to scrollHeight to expand
+  answer.style.height = answer.scrollHeight + "px";
+
+  // After transition, set height to auto to handle dynamic content
+  answer.addEventListener("transitionend", function setAuto() {
+    if (item.classList.contains("open")) {
+      answer.style.height = "auto";
+    }
+    answer.removeEventListener("transitionend", setAuto);
+  });
+}
+
+// Function to close FAQ
+function closeFAQ(item) {
+  const answer = item.querySelector(".faq-answer");
+
+  // Fix current height to start transition
+  answer.style.height = answer.scrollHeight + "px";
+
+  // Force a reflow to enable transition
+  answer.offsetHeight; 
+
+  // Collapse to 0
+  answer.style.height = "0px";
+
+  item.classList.remove("open");
+}
+
+// Add click event to all questions
 faqItems.forEach(item => {
   const question = item.querySelector(".faq-question");
-  const answer = item.querySelector(".faq-answer");
 
   question.addEventListener("click", () => {
     faqItems.forEach(i => {
-      if (i !== item) {
-        const a = i.querySelector(".faq-answer");
-        a.style.maxHeight = null;
-        i.classList.remove("open");
+      if (i !== item && i.classList.contains("open")) {
+        closeFAQ(i); // close all other FAQs
       }
     });
 
-    if (answer.style.maxHeight) {
-      answer.style.maxHeight = null;
-      item.classList.remove("open");
+    if (item.classList.contains("open")) {
+      closeFAQ(item); // toggle close
     } else {
-      answer.style.maxHeight = answer.scrollHeight + 36 + "px";
-      item.classList.add("open");
+      openFAQ(item); // toggle open
     }
   });
 });
 
-/* 🔥 Open first FAQ on page load */
+// Open first FAQ on page load
 window.addEventListener("DOMContentLoaded", () => {
   if (faqItems.length > 0) {
-    const firstItem = faqItems[0];
-    const firstAnswer = firstItem.querySelector(".faq-answer");
-    firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 36 + "px";
-    firstItem.classList.add("open");
+    openFAQ(faqItems[0]);
   }
 });
-</script>
 
+
+</script>
 
 <div class="protect-main-container">
   <h2>Restore A Safer, Healthier Home Starting Today</h2>

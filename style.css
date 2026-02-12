@@ -103,13 +103,14 @@ nav ul li.active>a .fa-chevron-down {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 70%;
+    width: 80%;
     height: 100vh;
     background: #fff;
-    padding: 120px 20px;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     transition: 0.5s;
+    gap: 50px;
     z-index: 10;
 }
 .menubar.active {
@@ -122,6 +123,7 @@ nav ul li.active>a .fa-chevron-down {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 20px;
 }
 .menubar ul li {
     position: relative;
@@ -234,6 +236,28 @@ nav ul li.active>a .fa-chevron-down {
     .hamburger {
         display: flex;
     }
+}
+
+
+.mobile-menu-upper-section{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.mobile-menu-upper-section img{
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+.mobile-menu-upper-section p{
+  font-size: small;
+  color: #555;
+  padding-left: 20px;
+  text-align: left;
 }
 /* Navbar End */
 
@@ -1089,23 +1113,27 @@ nav ul li.active>a .fa-chevron-down {
 /* FAQ */
 .faq {
   background: #fff;
-  padding:  50px;
+  padding: 50px;
   font-family: 'Arial', sans-serif;
   color: #000;
 }
+
 .faq .container {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .faq .section-header {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .faq .section-header h2 {
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 10px;
 }
+
 .faq .main-heading-line {
   width: 80px;
   height: 4px;
@@ -1113,16 +1141,19 @@ nav ul li.active>a .fa-chevron-down {
   margin: 0 auto 25px auto;
   border-radius: 2px;
 }
+
 .faq-items {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .faq-item {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 .faq-question {
   background: #28a745;
   color: #fff;
@@ -1133,56 +1164,72 @@ nav ul li.active>a .fa-chevron-down {
   position: relative;
 }
 
+.faq-question:hover {
+  background: #218838;
+}
+
+/* Arrow */
 .faq-question::after {
   content: "";
   position: absolute;
-  right: 20px;
+  right: 25px;
   top: 50%;
   width: 8px;
   height: 8px;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.3s ease;
 }
 
-.faq-question:hover {
-  background: #218838;
+.faq-item.open .faq-question::after {
+  transform: translateY(-50%) rotate(-135deg); /* rotated arrow when open */
 }
+
+/* FAQ Answer */
 .faq-answer {
-  background: #fff;
-  color: #000;
   overflow: hidden;
-  max-height: 0;
-  padding: 0 20px; /* initial collapsed padding */
+  height: 0;                /* collapsed */
+  padding: 0 25px;          /* collapsed padding */
   line-height: 1.6;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  color: #333;
+  transition: height 0.4s ease, padding 0.4s ease;
 }
 
 .faq-item.open .faq-answer {
-  padding: 10px 20px; /* open padding */
+  padding: 10px 25px;       /* expanded padding */
+  /* height handled dynamically in JS */
 }
 
+/* Responsive */
 @media(max-width:576px) {
   .faq {
     padding: 50px 20px;
   }
+
   .faq-question, .faq-answer {
-    padding: 15px 20px;
     font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .faq-question{
-    padding-right: 50px;
+
+  .faq-question {
+    padding-right: 40px; /* space for arrow */
   }
-   .faq-answer {
-    padding:  0 10px;
-   }
-   .faq-item.open .faq-answer {
-      padding: 10px;
-    }
+
+  .faq-answer {
+    padding: 0 10px;
+  }
+
+  .faq-item.open .faq-answer {
+    padding: 10px; /* mobile open padding */
+  }
+
   .faq .section-header h2 {
     font-size: 35px;
+  }
 }
-}
+
 /* Footer/ */
 .footer {
   background: #111;
