@@ -246,6 +246,7 @@ nav ul li.active>a .fa-chevron-down {
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  gap: 10px;
 }
 .mobile-menu-upper-section img{
   height: 100px;
