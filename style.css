@@ -268,8 +268,8 @@ nav ul li.active>a .fa-chevron-down {
 /* Close button styling */
 .mobile-close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   font-size: 30px;
   height: 100px;
   width: 100px ;
