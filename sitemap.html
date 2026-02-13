@@ -340,9 +340,9 @@ mobileClose.addEventListener("click", () => {
         <a href="reviews.html" title="Reviews"><i class="fas fa-check-circle"></i> Reviews</a>
         <a href="contact-us.html" title=" Contact Us"><i class="fas fa-check-circle"></i> Contact Us</a>
         <a href="get-started.html" title="Get Started"><i class="fas fa-check-circle"></i> Get Started</a>
-        <a href="terms.html" title="Terms & Conditions"><i class="fas fa-check-circle"></i> Terms & Conditions</a>
         <a href="privacy.html" title="Privacy Policy"><i class="fas fa-check-circle"></i> Privacy Policy</a>
         <a href="sitemap.html" title="Sitemap"><i class="fas fa-check-circle"></i>Sitemap</a>
+        <a href="terms.html" title="Terms & Conditions"><i class="fas fa-check-circle"></i> Terms & Conditions</a>
       </div>
     </div>
 
@@ -359,18 +359,23 @@ mobileClose.addEventListener("click", () => {
     <div class="sitemap-section">
       <h3>Our Locations</h3>
       <div class="sitemap-links">
+        <h4>Miami</h4>
         <a href="miami-mold-remediation.html" title="Miami, FL Mold Remediation "><i class="fas fa-check-circle"></i>Miami, FL Mold Remediation </a>
         <a href="miami-mold-assessment-and-inspection.html" title="Miami, FL Mold Assessment & Inspection"><i class="fas fa-check-circle"></i>Miami, FL Mold Assessment & Inspection</a>
         <a href="miami-mold-removal.html" title="Miami, FL Mold Removal"><i class="fas fa-check-circle"></i>Miami, FL Mold Removal</a>
+        <h4>Orlando</h4>
         <a href="orlando-mold-remediation.html" title="Orlando, FL Mold Remediation"><i class="fas fa-check-circle"></i>Orlando, FL Mold Remediation </a>
         <a href="orlando-mold-assessment-and-inspection.html" title="Orlando, FL Mold Assessment & Inspection"><i class="fas fa-check-circle"></i>Orlando, FL Mold Assessment & Inspection</a>
         <a href="orlando-mold-removal.html" title="Orlando, FL Mold Removal"><i class="fas fa-check-circle"></i>Orlando, FL Mold Removal</a>
+        <h4>Tampa</h4>
         <a href="tampa-mold-remediation.html" title="Tampa, FL Mold Remediation"><i class="fas fa-check-circle"></i>Tampa, FL Mold Remediation </a>
         <a href="tampa-mold-assessment-and-inspection.html" title="Tampa, FL Mold Assessment & Inspection"><i class="fas fa-check-circle"></i>Tampa, FL Mold Assessment & Inspection</a>
         <a href="tampa-mold-removal.html" title="Tampa, FL Mold Removal"><i class="fas fa-check-circle"></i>Tampa, FL Mold Removal</a>
+        <h4>Jacksonville</h4>
         <a href="jacksonville-mold-remediation.html" title="Jacksonville, FL Mold Remediation "><i class="fas fa-check-circle"></i>Jacksonville, FL Mold Remediation </a>
         <a href="jacksonville-mold-assessment-and-inspection.html" title="Jacksonville, FL Mold Assessment & Inspection"><i class="fas fa-check-circle"></i>Jacksonville, FL Mold Assessment & Inspection</a>
         <a href="jacksonville-mold-removal.html" title="Jacksonville, FL Mold Removal"><i class="fas fa-check-circle"></i>Jacksonville, FL Mold Removal</a>
+        <h4>Petersburg</h4>
         <a href="petersburg-mold-remediation.html" title="Petersburg, FL Mold Remediation"><i class="fas fa-check-circle"></i>Petersburg, FL Mold Remediation </a>
         <a href="petersburg-mold-assessment-and-inspection.html" title="Petersburg, FL Mold Assessment & Inspection"><i class="fas fa-check-circle"></i>Petersburg, FL Mold Assessment & Inspection</a>
         <a href="petersburg-mold-removal.html" title="Petersburg, FL Mold Removal"><i class="fas fa-check-circle"></i>Petersburg, FL Mold Removal</a>
@@ -436,6 +441,27 @@ mobileClose.addEventListener("click", () => {
   flex-wrap: wrap;
   gap: 20px;
 }
+.sitemap-links h4 {
+  position: relative; 
+  height: fit-content;
+  margin-left: 10px;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-weight: 900;
+
+}
+
+.sitemap-links h4::before {
+  content: "";
+  position: absolute;
+  bottom: 0;        
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #28a745;
+}
 
 .sitemap-links a {
   display: flex;
@@ -463,6 +489,7 @@ mobileClose.addEventListener("click", () => {
   .sitemap-links {
     justify-content: flex-start;
     gap: 15px;
+    flex-direction: column;
   }
 
   .sitemap-links a {
