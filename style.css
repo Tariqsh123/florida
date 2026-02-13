@@ -2149,3 +2149,43 @@ nav ul li.active>a .fa-chevron-down {
   font-size: medium;
 }
 }
+
+
+#footer-logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+#footer-column-one-p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.footer-social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-icons a img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.footer-social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+@media(max-width:600px){
+    .first-footer-col {
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
