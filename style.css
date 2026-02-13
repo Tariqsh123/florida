@@ -265,6 +265,26 @@ nav ul li.active>a .fa-chevron-down {
   text-align: left;
 }
 
+/* Close button styling */
+.mobile-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  height: 100px;
+  width: 100px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #555;
+  z-index: 999;
+}
+.mobile-close:hover{
+  color: red;
+}
+
+
 /* Navbar End */
 
 /* Header */
