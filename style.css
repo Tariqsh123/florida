@@ -12,11 +12,13 @@ nav {
     padding: 10px 5%;
     background: #fff;
     box-shadow: 0 1px 10px gray;
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
     z-index: 10;
 }
 nav .logo img {
-    height: 90px;
+    height: 80px;
 }
 nav ul {
     display: flex;
@@ -235,6 +237,9 @@ nav ul li.active>a .fa-chevron-down {
     .hamburger {
         display: flex;
     }
+    nav .logo img {
+    height: 70px;
+}
 }
 
 
@@ -270,7 +275,8 @@ nav ul li.active>a .fa-chevron-down {
   justify-content: center;
   padding-bottom: 100px;
   align-items: center;
-  background: url('https://img.freepik.com/free-photo/unrecognizable-person-white-chemical-protection-suit-doing-disinfection-public-areas-stop-spreading-highly-contagious-corona-virus_342744-869.jpg?semt=ais_hybrid&w=740&q=80') center/cover no-repeat;
+  background-color: black;
+  /* background: url('https://img.freepik.com/free-photo/unrecognizable-person-white-chemical-protection-suit-doing-disinfection-public-areas-stop-spreading-highly-contagious-corona-virus_342744-869.jpg?semt=ais_hybrid&w=740&q=80') center/cover no-repeat; */
   position: relative;
   color: #fff;
 }
@@ -488,7 +494,7 @@ nav ul li.active>a .fa-chevron-down {
   height: 35px;
 }
 .why-choose-us .card h3 {
-  font-size: 1.4rem;
+  font-size: 18px;
   font-weight: 700;
   color: #28a745;
   margin-bottom: 15px;
@@ -1587,7 +1593,7 @@ nav ul li.active>a .fa-chevron-down {
 
 /* Text */
 .equipment-card h3 {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   color: #222;
   margin-bottom: 12px;
@@ -1639,6 +1645,8 @@ nav ul li.active>a .fa-chevron-down {
   gap: 20px;
   flex: 1 1 250px;
   max-width: 400px;
+  position: sticky;
+  top: 120px;
 }
 
 .before-after-collage .image-box img {
@@ -1730,6 +1738,10 @@ nav ul li.active>a .fa-chevron-down {
     gap: 0;
   }
 
+.before-after-collage .image-column {
+  position:relative;
+  top: 0;
+}
   .before-after-collage .image-column {
     flex-direction: column;
     justify-content: center;
