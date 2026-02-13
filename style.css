@@ -578,7 +578,7 @@ nav ul li.active>a .fa-chevron-down {
   max-width: 320px;
   border-radius: 20px;
   border: 1px solid #28a745;
-  padding: 30px 20px;
+  padding: 30px 10px;
   position: relative;
   box-shadow: 0 15px 30px rgba(0,0,0,0.5);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -611,14 +611,14 @@ nav ul li.active>a .fa-chevron-down {
   height: 50px;
 }
 .services .service-card h3 {
-  font-size: 1.3rem;
+  font-size: 18px;
   font-weight: 700;
   color: #28a745;
   margin-bottom: 15px;
 }
 .services .service-card p {
   font-size: small;
-  height: 220px;
+  min-height: 180px;
   color: #fff;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -627,7 +627,7 @@ nav ul li.active>a .fa-chevron-down {
   background: #28a745;
   color: #fff;
   border: none;
-  padding: 12px 10px !important;
+  padding: 8px 10px !important;
   font-weight: 700;
   border-radius: 50px;
   cursor: pointer;
