@@ -1264,8 +1264,7 @@ nav ul li.active>a .fa-chevron-down {
 .footer {
   background: #111;
   color: #fff;
-  padding: 70px 50px 30px;
-  font-family: 'Arial', sans-serif;
+  padding: 70px 20px 30px;
 }
 .footer .container {
   max-width: 1400px;
