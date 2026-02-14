@@ -10,6 +10,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
+    padding-left: 10px;
     background: #fff;
     box-shadow: 0 1px 10px gray;
     position: sticky;
@@ -1275,6 +1276,17 @@ nav ul li.active>a .fa-chevron-down {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+  position: relative;
+}
+.footer-columns::before{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #218838;
+  position: absolute;
+  top: 62%;
+  left: 0;
+
 }
 .footer-col {
   flex: 1 1 200px;
@@ -1352,6 +1364,42 @@ nav ul li.active>a .fa-chevron-down {
     font-size: x-small;
 }
 }
+@media(max-width:1120px){
+  .footer-columns::before{
+  top: 50%;
+}
+}
+@media(max-width: 991px){
+  .footer-columns::before{
+  top: 43%;
+}
+}
+@media(max-width: 768px){
+  .footer-columns::before{
+  top: 46%;
+}
+}
+@media(max-width: 680px){
+  .footer-columns::before{
+  top: 47%;
+}
+}
+@media(max-width: 620px){
+  .footer-columns::before{
+  top: 41%;
+}
+}
+@media(max-width: 600px){
+  .footer-columns::before{
+  top: 29%;
+}
+}
+@media(max-width: 480px){
+  .footer-columns::before{
+  top: 30%;
+}
+}
+
 
 #footer-logo {
   height: 150px;
