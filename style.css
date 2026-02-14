@@ -293,7 +293,7 @@ nav ul li.active>a .fa-chevron-down {
   flex-wrap: wrap;
   height: fit-content;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   align-items: center;
   background-color: black;
   /* background: url('https://img.freepik.com/free-photo/unrecognizable-person-white-chemical-protection-suit-doing-disinfection-public-areas-stop-spreading-highly-contagious-corona-virus_342744-869.jpg?semt=ais_hybrid&w=740&q=80') center/cover no-repeat; */
@@ -1353,6 +1353,77 @@ nav ul li.active>a .fa-chevron-down {
 }
 }
 
+#footer-logo {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+#footer-column-one-p {
+  font-size: x-small;
+  margin: 10px 0;
+}
+
+.footer-social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-icons a img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.footer-social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+.first-footer-col{
+  flex: 1 1 33%;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.second-footer-col,.third-footer-col{
+  flex: 1 1 30%;
+}
+.second-footer-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.second-footer-col ul{
+  padding-left: 30px;
+}
+
+@media(max-width:600px){
+    .first-footer-col {
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+    #footer-logo {
+  height: 200px;
+}
+.second-footer-col {
+    align-items: flex-start;
+}
+.second-footer-col ul{
+  padding-left: 0;
+}
+}
 
 
 
@@ -2150,60 +2221,3 @@ nav ul li.active>a .fa-chevron-down {
 }
 
 
-#footer-logo {
-  height: 150px;
-  width: auto;
-  object-fit: contain;
-}
-
-#footer-column-one-p {
-  font-size: x-small;
-  margin: 10px 0;
-}
-
-.footer-social-icons {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-}
-
-.footer-social-icons a img {
-  width: 25px;
-  height: 25px;
-  object-fit: contain;
-  transition: transform 0.3s;
-}
-
-.footer-social-icons a:hover img {
-  transform: scale(1.2);
-}
-
-.first-footer-col{
-  flex: 1 1 33%;
-  padding-right: 40px;
-  padding-bottom: 20px;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.second-footer-col,.third-footer-col{
-  flex: 1 1 30%;
-}
-
-@media(max-width:600px){
-    .first-footer-col {
-        flex: 1 1 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-right: 0;
-        align-items: center;
-        text-align: center;
-    }
-    #footer-logo {
-  height: 200px;
-}
-
-}
