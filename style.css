@@ -1003,7 +1003,7 @@ nav ul li.active>a .fa-chevron-down {
 
 .testimonial-card {
   width: 350px;
-  height: 450px;
+  height: fit-content;
   background: #fff;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   display: flex;
